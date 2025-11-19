@@ -1,6 +1,6 @@
 ---
-title: 'Home'
-date: 2023-10-24
+title: 'Hopla - Vols pas cher depuis Alsace'
+date: 2025-11-19
 type: landing
 
 design:
@@ -10,136 +10,120 @@ design:
 sections:
   - block: hero
     content:
-      title: Build Your Landing Pages with Hugo Blox
-      text: 🧱 EASY. FREE (OPEN SOURCE). NO-CODE  🧱
+      title: Pars d'ici, rêve plus loin
+      text: Les meilleurs deals vols existent... mais tu ne les vois jamais passer à temps. Hopla détecte automatiquement les vols les moins chers depuis Strasbourg, Bâle, Karlsruhe et t'avertit avant que le prix ne remonte.
       primary_action:
-        text: Get Started
-        url: https://hugoblox.com/templates/
+        text: Télécharger Hopla
+        url: '#download'
         icon: rocket-launch
       secondary_action:
-        text: Read the docs
-        url: https://docs.hugoblox.com
+        text: Voir comment ça marche
+        url: '#features'
       announcement:
-        text: "Announcing the release of version 1."
+        text: "La première app qui scanne les prix 24/7 depuis tes aéroports locaux."
         link:
-          text: "Read more"
-          url: "/blog/"
+          text: "En savoir plus"
+          url: "#features"
     design:
-    #   spacing:
-    #     padding: [0, 0, 0, 0]
-    #     margin: [0, 0, 0, 0]
-      # For full-screen, add `min-h-screen` below
       css_class: "dark"
       background:
-        color: "navy"
+        color: "#C41E3A"
         image:
-          # Add your image background to `assets/media/`.
-          filename: bg-triangles.svg
+          filename: ""
           filters:
-            brightness: 0.5
+            brightness: 0.8
           size: cover
           position: center
           parallax: false
+
   - block: stats
     content:
       items:
-        - statistic: "1M+"
+        - statistic: "24/7"
           description: |
-            Websites built  
-            with Hugo Blox
-        - statistic: "10k+"
+            Surveillance des prix
+            en temps réel
+        - statistic: "0€"
           description: |
-            GitHub stars  
-            since 2016
-        - statistic: "3k+"
+            Complètement gratuit
+            sans frais cachés
+        - statistic: "2 clics"
           description: |
-            Discord community  
-            for support
+            Du deal à la réservation
+            ultra rapide
     design:
-      # Section background color (CSS class)
       css_class: "bg-gray-100 dark:bg-gray-900"
-      # Reduce spacing
       spacing:
         padding: ["1rem", 0, "1rem", 0]
+
   - block: features
     id: features
     content:
-      title: Features
-      text: Build your site with blocks 🧱
+      title: Comment ça marche
+      text: Hopla détecte automatiquement les meilleurs deals pour toi
       items:
-        - name: Optimized SEO
-          icon: magnifying-glass
-          description: Automatic sitemaps, RSS feeds, and rich metadata take the pain out of SEO and syndication.
-        - name: Fast
-          icon: bolt
-          description: Super fast page load with Tailwind CSS and super fast site building with Hugo.
-        - name: Easy
-          icon: sparkles
-          description: One-click deployment to GitHub Pages. Have your new website live within 5 minutes!
-        - name: No-Code
-          icon: code-bracket
-          description: Edit and design your site just using rich text (Markdown) and configurable YAML parameters.
-        - name: Highly Rated
-          icon: star
-          description: Rated 5-stars by the community.
-        - name: Swappable Blocks
-          icon: rectangle-group
-          description: Build your pages with blocks - no coding required!
+        - name: 🔍 Détection Automatique
+          description: Tu définis tes destinations préférées une fois. Hopla surveille les prix 24/7 depuis tes aéroports et t'alerte dès qu'un bon plan apparaît.
+        - name: 🔔 Notifications Intelligentes
+          description: Pas de spam. Tu reçois une notification uniquement quand le prix passe sous ton seuil. Et tu peux partir en moins de 2 clics.
+        - name: ✈️ Spontané & Flexible
+          description: Un deal fou à Barcelone demain ? Parfait. Hopla te montre toutes les options pour partir du jour au lendemain.
+        - name: 📱 Ultra Simple
+          description: Pas besoin de coder ou de configurer des trucs compliqués. Une app, une destination, et hop.
+        - name: 🎯 Local d'abord
+          description: On regarde depuis Strasbourg, Bâle, Karlsruhe. Pas depuis Paris. C'est ta région qui compte.
+        - name: 💰 Gratuit
+          description: Complètement gratuit. Pas de frais cachés, pas d'abonnement. Juste des bons plans.
+
   - block: cta-image-paragraph
-    id: solutions
+    id: about
     content:
       items:
-        - title: Build your future-proof website
-          text: As easy as 1, 2, 3!
+        - title: Pourquoi Hopla existe
+          text: Les bons plans vols existent... mais tu ne les vois jamais à temps.
           feature_icon: check
           features:
-            - "Future-proof - edit your content in text files"
-            - "Website is generated by a single app, Hugo"
-            - "No JavaScript knowledge required"
-          # Upload image to `assets/media/` and reference the filename here
-          image: build-website.png
+            - "Pendant que Google Flights regarde vers Paris, on regarde vers ici"
+            - "Tu ne cherches plus, c'est l'app qui cherche pour toi"
+            - "Détection des deals en temps réel, notification avant que ça remonte"
+          image: ""
           button:
-            text: Get Started
-            url: https://hugoblox.com/templates/
-        - title: Large Community
-          text: Join our large community on Discord - ask questions and get live responses
-          feature_icon: bolt
-          features:
-            - "Dedicated support channel"
-            - "3,000+ users on Discord"
-            - "Share your site and get feedback"
-          # Upload image to `assets/media/` and reference the filename here
-          image: coffee.jpg
-          button:
-            text: Join Discord
-            url: https://discord.gg/z8wNYzb
+            text: Télécharger Hopla
+            url: "#download"
     design:
-      # Section background color (CSS class)
-      css_class: "bg-gray-100 dark:bg-gray-900"
+      css_class: "bg-white"
+
   - block: testimonials
     content:
-      title: ""
+      title: "Qui sont les hoplers ?"
       text: ""
       items:
-        - name: "Hugo Smith"
-          role: "Marketing Executive at X"
-          # Upload image to `assets/media/` and reference the filename here
-          image: "testimonial-1.jpg"
-          text: "Awesome, so easy to use and saved me so much work with the swappable pre-designed sections!"
+        - name: "Étudiants"
+          role: "Qui veulent découvrir l'Europe sous 200€"
+          image: ""
+          text: "Hopla rend le voyage possible, sans se ruiner."
+        - name: "Jeunes actifs"
+          role: "Qui rêvent de partir mais pas de se ruiner"
+          image: ""
+          text: "Un deal fou le vendredi ? Tu parts le lendemain."
+        - name: "Aventuriers"
+          role: "Qui aiment l'imprévu et la spontanéité"
+          image: ""
+          text: "Le voyage c'est pas un luxe, c'est une nécessité."
     design:
       spacing:
-        # Reduce bottom spacing so the testimonial appears vertically centered between sections
         padding: ["6rem", 0, 0, 0]
+
   - block: cta-card
+    id: download
     content:
-      title: Build your future-proof website
-      text: As easy as 1, 2, 3!
+      title: Tu ouvres l'app. Tu découvres un deal fou. En deux clics tu pars.
+      text: Hopla, c'est une communauté de voyageurs curieux qui veulent bouger sans se ruiner. Simple. Local. Inspirant.
       button:
-        text: Get Started
-        url: https://hugoblox.com/templates/
+        text: 📱 Télécharger Hopla gratuitement
+        url: 'https://apps.apple.com/fr/app/hopla'
     design:
       card:
-        # Card background color (CSS class)
-        css_class: "bg-primary-300"
+        css_class: "bg-primary-600"
         css_style: ""
 ---
