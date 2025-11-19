@@ -1,20 +1,23 @@
+# File: config/_default/menus.yaml
+# Hopla - Navigation menus
+
 # Navigation Links
 #   To link a page section, specify the URL as a hash `/#` followed by the `id` of the section.
 #   The `weight` parameter defines the order that the links will appear in.
 
 main:
-  - name: Home
+  - name: Accueil
     url: /#top
     weight: 10
-  - name: Features
-    url: /#features
+  
+  - name: À propos
+    url: /#about
     weight: 20
-  - name: Solutions
-    url: /#solutions
+  
+  - name: Blog
+    url: /blog/
     weight: 30
-  - name: Resources
+  
+  - name: Télécharger l'app
+    url: '#download'
     weight: 40
-    hasChildren: true
-  - parent: Resources
-    name: Blog
-    url: blog/
