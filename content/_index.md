@@ -121,7 +121,7 @@ sections:
       text: Hopla, c'est une communauté de voyageurs curieux qui veulent bouger sans se ruiner. Simple. Local. Inspirant.
       button:
         text: 📱 Télécharger Hopla gratuitement
-        url: 'https://apps.apple.com/fr/app/hopla'
+        url: 'https://apps.apple.com/fr/app/hopla-vols-pas-chers-alsace/id6753660322'
     design:
       card:
         css_class: "bg-primary-600"
