@@ -6,7 +6,7 @@
 # Appearance
 appearance:
   mode: light
-  color: custom
+  color: indigo
 
 # SEO
 marketing:
