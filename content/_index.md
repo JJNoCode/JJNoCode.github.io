@@ -126,4 +126,16 @@ sections:
       card:
         css_class: "bg-primary-600"
         css_style: ""
+
+  - block: cta-card
+    content:
+      title: ""
+      text: Disponible aussi sur Android
+      button:
+        text: 🤖 Télécharger sur Google Play
+        url: 'https://play.google.com/store/apps/details?id=com.jj.hopla&pli=1'
+    design:
+      card:
+        css_class: "bg-primary-600"
+        css_style: ""
 ---
