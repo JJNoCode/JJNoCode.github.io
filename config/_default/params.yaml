@@ -1,81 +1,55 @@
-# File: config/_default/config.yaml
-# Hopla - Configuration Hugo
-
-# Configuration of Hugo
+# SITE SETUP
 # Guide: https://docs.hugoblox.com/tutorial/
-# Hugo Documentation: https://gohugo.io/getting-started/configuration/#all-configuration-settings
+# Documentation: https://docs.hugoblox.com/
 # This file is formatted using YAML syntax - learn more at https://learnxinyminutes.com/docs/yaml/
 
-title: 'Hopla - Vols pas cher depuis Alsace' # Website name
-baseURL: 'https://ho-pla.fr/' # Website URL
+# Appearance
+appearance:
+  mode: light
+  color: custom
 
-############################
-## PAGE OPTIONS
-############################
-cascade:
-  # Blog post options
-  - _target:
-      path: /blog/**
-      kind: page
-    pager: true
-    editable: true
-    hide_date: false
-    show_date_updated: true
-    reading_time: true
-    commentable: false
-    show_related: true
-    share: true
-    show_breadcrumb: false
-    header:
-      navbar:
-        enable: true
-  # Blog section options
-  - _target:
-      path: /blog/*
-      kind: section
-    # Set the listing view
-    view: date-title-summary
+# SEO
+marketing:
+  seo:
+    site_type: SoftwareApplication
+    local_business_type: ''
+    org_name: 'Hopla'
+    description: 'La première app qui détecte les vols les moins chers depuis les aéroports locaux (Strasbourg, Bâle, Karlsruhe). Alerte prix gratuite et notifications en temps réel.'
+    twitter: ''
+  analytics:
+    google_analytics: 'G-35WQ48G1L8'
+    baidu_tongji: ''
+    plausible: ''
+    fathom: ''
+    pirsch: ''
+  verification:
+    google: ''
+    baidu: ''
 
-############################
-## LANGUAGE
-############################
-defaultContentLanguage: fr
-hasCJKLanguage: false
-defaultContentLanguageInSubdir: false
-removePathAccents: true
+# Site header
+header:
+  navbar:
+    enable: true
+    block: 'navbar'
+    align: 'center'
+    fixed_to_top: true
+    logo:
+      text: ''
+      # Logo filename in `assets/media/` folder
+      filename: 'logo.png'
+    button:
+      enable: true
+      text: 'Télécharger Hopla'
+      url: '#download'
+    show_search: false
+    show_theme_chooser: false
 
-############################
-## ADVANCED
-############################
-build:
-  writeStats: true
-enableGitInfo: false
-summaryLength: 30
-pagination:
-  pagerSize: 10
-enableEmoji: true
-enableRobotsTXT: true
-footnotereturnlinkcontents: <sup>^</sup>
-ignoreFiles: [\.ipynb$, .ipynb_checkpoints$, \.Rmd$, \.Rmarkdown$, _cache$]
-disableAliases: true
-outputs:
-  home: [HTML, RSS, headers, redirects]
-  section: [HTML, RSS]
-imaging:
-  resampleFilter: lanczos
-  quality: 90
-  anchor: smart
-  hint: picture
-timeout: 600000
-taxonomies:
-  tag: tags
-  category: categories
-  author: authors
-markup:
-  _merge: deep
-  highlight:
-    lineNos: false
-security:
-  _merge: deep
-sitemap:
-  _merge: deep
+# Site footer
+footer:
+  copyright:
+    notice: '© {year} Hopla. Pars d''ici, rêve plus loin. | bonjour@ho-pla.fr'
+
+# Localization
+locale:
+  date_format: 'Jan 2, 2006'
+  time_format: '3:04 PM'
