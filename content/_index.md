@@ -29,7 +29,7 @@ sections:
       background:
         color: "#C41E3A"
         image:
-          filename: "coffee.jpg"
+          filename: ""
           filters:
             brightness: 0.8
           size: cover
@@ -86,7 +86,7 @@ sections:
             - "Pendant que Google Flights regarde vers Paris, on regarde vers ici"
             - "Tu ne cherches plus, c'est l'app qui cherche pour toi"
             - "Détection des deals en temps réel, notification avant que ça remonte"
-          image: "coffee.jpg"
+          image: placeholder200x200.png
           button:
             text: Télécharger Hopla
             url: "#download"
@@ -100,15 +100,15 @@ sections:
       items:
         - name: "Étudiants"
           role: "Qui veulent découvrir l'Europe sous 200€"
-          image: "coffee.jpg"
+          image: ""
           text: "Hopla rend le voyage possible, sans se ruiner."
         - name: "Jeunes actifs"
           role: "Qui rêvent de partir mais pas de se ruiner"
-          image: "coffee.jpg"
+          image: ""
           text: "Un deal fou le vendredi ? Tu parts le lendemain."
         - name: "Aventuriers"
           role: "Qui aiment l'imprévu et la spontanéité"
-          image: "coffee.jpg"
+          image: ""
           text: "Le voyage c'est pas un luxe, c'est une nécessité."
     design:
       spacing:
