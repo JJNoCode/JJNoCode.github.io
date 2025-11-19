@@ -1,91 +1,82 @@
-# File: config/_default/params.yaml
-# Hopla - Configuration complète
-
-# SITE SETUP
+# Configuration of Hugo
 # Guide: https://docs.hugoblox.com/tutorial/
-# Documentation: https://docs.hugoblox.com/
+# Hugo Documentation: https://gohugo.io/getting-started/configuration/#all-configuration-settings
 # This file is formatted using YAML syntax - learn more at https://learnxinyminutes.com/docs/yaml/
 
-# Appearance
-appearance:
-  mode: light
-  color: custom  # Changed from indigo to custom
+title: Hopla - Vols pas cher depuis Alsace
+baseURL: 'https://ho-pla.fr/'
 
-# SEO
-marketing:
-  seo:
-    site_type: SoftwareApplication
-    local_business_type: ''
-    org_name: 'Hopla'
-    description: 'Détecte automatiquement les meilleurs deals de vols depuis Strasbourg, Bâle, Karlsruhe. Alerte prix gratuite et notifications en temps réel.'
-    twitter: ''
-  analytics:
-    google_analytics: 'G-35WQ48G1L8'
-    baidu_tongji: ''
-    plausible: ''
-    fathom: ''
-    pirsch: ''
-  verification:
-    google: ''
-    baidu: ''
+############################
+## PAGE OPTIONS
+############################
 
-# Site header
-header:
-  navbar:
-    enable: true
-    block: 'navbar'
-    align: 'center'
-    fixed_to_top: true
-    logo:
-      text: 'Hopla'
-      # Logo filename in `assets/media/` folder
-      filename: 'logo.png'
-    button:
-      enable: true
-      text: 'Télécharger Hopla'
-      url: '#download'
-    show_search: false
-    show_theme_chooser: false
+cascade:
+  # Blog post options
+  - _target:
+      path: /blog/**
+      kind: page
+    pager: true
+    editable: true
+    hide_date: false
+    show_date_updated: true
+    reading_time: true
+    commentable: true
+    show_related: true
+    share: true
+    # Just use Breadcrumb for navigation on blog post pages?
+    show_breadcrumb: false
+    header:
+      navbar:
+        enable: true
+  # Blog section options
+  - _target:
+      path: /blog/*
+      kind: section
+    # Set the listing view
+    view: date-title-summary
 
-# Site footer
-footer:
-  copyright:
-    notice: '© 2025 Hopla. Tous droits réservés. Pars d''ici, rêve plus loin.'
+############################
+## LANGUAGE
+############################
 
-# Localization
-locale:
-  date_format: '02 Jan 2006'
-  time_format: '15:04'
+defaultContentLanguage: fr
+hasCJKLanguage: false
+defaultContentLanguageInSubdir: false
+removePathAccents: true
 
-# Custom Colors (Hopla brand)
-color_schemes:
-  hopla:
-    primary: '#C41E3A'      # Hopla red
-    secondary: '#8B6F47'    # Warm brown
-    tertiary: '#D4A574'     # Ochre
-    alternative: '#E8E6E3'  # Off-white
-    background: '#FAF7F2'   # Cream
-    surface: '#F0EBE3'      # Sand
-    success: '#27AE60'
-    warning: '#F39C12'
-    danger: '#E85A4F'
-    light: '#FAF7F2'
-    dark: '#1A1A1A'
+############################
+## ADVANCED
+############################
 
-# Contact
-contact:
-  email: 'bonjour@ho-pla.fr'
-  phone: ''
-  address:
-    city: 'Strasbourg'
-    region: 'Alsace'
-    country: 'France'
-
-# Social links
-social:
-  - icon: 'fab fa-instagram'
-    icon_pack: 'fas'
-    link: 'https://instagram.com/hopla.vol'
-  - icon: 'fas fa-envelope'
-    icon_pack: 'fas'
-    link: 'mailto:bonjour@ho-pla.fr'
+build:
+  writeStats: true
+enableGitInfo: false
+summaryLength: 30
+pagination:
+  pagerSize: 10
+enableEmoji: true
+enableRobotsTXT: true
+footnotereturnlinkcontents: <sup>^</sup>
+ignoreFiles: [\.ipynb$, .ipynb_checkpoints$, \.Rmd$, \.Rmarkdown$, _cache$]
+disableAliases: true
+outputs:
+  home: [HTML, RSS, headers, redirects]
+  section: [HTML, RSS]
+imaging:
+  resampleFilter: lanczos
+  quality: 90
+  anchor: smart
+  hint: picture
+timeout: 600000
+taxonomies:
+  tag: tags
+  category: categories
+  author: authors
+markup:
+  _merge: deep
+  highlight:
+    lineNos: false
+security:
+  _merge: deep
+sitemap:
+  _merge: deep
