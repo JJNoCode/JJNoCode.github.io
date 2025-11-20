@@ -1,0 +1,44 @@
+backend:
+  name: github
+  repo: JJNoCode/JJNoCode.github.io
+  branch: main
+  auth_endpoint: api/auth
+
+media_folder: static/media
+public_folder: /media
+
+collections:
+  # Blog posts collection
+  - name: blog
+    label: Articles Blog
+    folder: content/blog
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Titre", name: "title", widget: "string"}
+      - {label: "Description", name: "description", widget: "string", required: false}
+      - {label: "Date", name: "date", widget: "datetime"}
+      - {label: "Tags", name: "tags", widget: "list", required: false}
+      - {label: "Contenu", name: "body", widget: "markdown"}
+      - {label: "Image à la une", name: "featured_image", widget: "image", required: false}
+      - {label: "Auteur", name: "author", widget: "string", default: "Hopla Team"}
+    format: frontmatter
+
+  # Pages légales
+  - name: legal
+    label: Pages légales
+    folder: content/legal
+    create: false
+    fields:
+      - {label: "Titre", name: "title", widget: "string"}
+      - {label: "Contenu", name: "body", widget: "markdown"}
+
+  # À propos
+  - name: pages
+    label: Pages
+    folder: content
+    create: false
+    filter: {field: "type", value: "page"}
+    fields:
+      - {label: "Titre", name: "title", widget: "string"}
+      - {label: "Contenu", name: "body", widget: "markdown"}
