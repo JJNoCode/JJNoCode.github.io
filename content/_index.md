@@ -82,21 +82,17 @@ sections:
           name: Transparent
           description: Pas d'arnaque. Juste des deals vrais.
 
-  - block: portfolio
+  - block: collection
     id: deals
     content:
       title: Les meilleurs deals cette semaine
       text: On a trié pour toi
-      items:
-        - title: Lisbonne
-          content: "🇵🇹 Vol A/R • 7j • 124€ vs 137€ (-7%)"
-          image: placeholder200x200.png
-        - title: Marrakech
-          content: "🇲🇦 Vol A/R • 7j • 89€ vs 105€ (-15%)"
-          image: placeholder200x200.png
-        - title: Barcelone
-          content: "🇪🇸 Vol A/R • 7j • 95€ vs 130€ (-27%)"
-          image: placeholder200x200.png
+      filters:
+        folders:
+          - deals
+    design:
+      view: card
+      columns: "3"
 
   - block: markdown
     id: about
