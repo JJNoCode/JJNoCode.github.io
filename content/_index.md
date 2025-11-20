@@ -1,5 +1,5 @@
 ---
-title: 'Hopla - Voyager malin depuis l'Alsace'
+title: Hopla - Voyager malin depuis l'Alsace
 date: 2025-11-19
 type: landing
 
@@ -7,28 +7,26 @@ design:
   spacing: "6rem"
 
 sections:
-  # ========== HERO ==========
   - block: hero
     content:
       title: Voyager sans se ruiner
       text: On scanne 24/7 les meilleurs vols depuis Strasbourg, Bâle, Mulhouse. Pas de pub. Pas d'arnaque. Juste des deals vrais.
       primary_action:
-        text: 📱 Télécharger sur l'App Store
-        url: 'https://apps.apple.com/fr/app/hopla-vols-pas-chers-alsace/id6753660322'
+        text: "📱 Télécharger sur l'App Store"
+        url: "https://apps.apple.com/fr/app/hopla-vols-pas-chers-alsace/id6753660322"
       secondary_action:
         text: Voir comment ça marche
-        url: '#how-it-works'
+        url: "#how-it-works"
       announcement:
         text: "✈️ Pars d'ici, rêve plus loin"
         link:
           text: "100K+ utilisateurs"
           url: "#testimonials"
     design:
-      css_class: "dark"
+      css_class: dark
       background:
         color: "#C41E3A"
 
-  # ========== STATS ==========
   - block: stats
     content:
       items:
@@ -39,9 +37,8 @@ sections:
         - statistic: "50€"
           description: Économie moyenne
     design:
-      css_class: "bg-white"
+      css_class: bg-white
 
-  # ========== HOW IT WORKS ==========
   - block: features
     id: how-it-works
     content:
@@ -57,11 +54,10 @@ sections:
           description: On scanne 24/7 et te notifie si le prix baisse
         - icon: rocket
           name: Réserve en 1 clic
-          description: Direct sur Aviasales, sans friction
+          description: Direct sur Aviasales sans friction
 
-  # ========== BENEFITS ==========
   - block: features
-    id: features
+    id: benefits
     content:
       title: Pourquoi Hopla?
       text: Ce qui nous rend différent
@@ -80,13 +76,12 @@ sections:
           name: Accessible
           description: Complètement gratuit. Pas de frais cachés.
         - icon: clock
-          name: 24/7
+          name: "24/7"
           description: On scanne même quand tu dors.
         - icon: star
           name: Transparent
           description: Pas d'arnaque. Juste des deals vrais.
 
-  # ========== FEATURED DEALS ==========
   - block: portfolio
     id: deals
     content:
@@ -103,7 +98,6 @@ sections:
           content: "🇪🇸 Vol A/R • 7j • 95€ vs 130€ (-27%)"
           image: placeholder200x200.png
 
-  # ========== ABOUT ==========
   - block: markdown
     id: about
     content:
@@ -120,23 +114,21 @@ sections:
         
         **Voilà. C'est ça, Hopla.**
 
-  # ========== TESTIMONIALS ==========
   - block: testimonials
     id: testimonials
     content:
-      title: "Qui sont les hoplers?"
+      title: Qui sont les hoplers?
       items:
-        - name: "Étudiants"
-          role: "Qui veulent découvrir l'Europe sous 200€"
-          text: "Hopla rend le voyage possible, sans se ruiner."
-        - name: "Jeunes actifs"
-          role: "Qui rêvent de partir mais pas de se ruiner"
-          text: "Un deal fou le vendredi? Tu pars le lendemain."
-        - name: "Aventuriers"
-          role: "Qui aiment l'imprévu"
-          text: "Il y a toujours un vol pas cher quelque part. Hopla te le trouve."
+        - name: Étudiants
+          role: Qui veulent découvrir l'Europe sous 200€
+          text: Hopla rend le voyage possible, sans se ruiner.
+        - name: Jeunes actifs
+          role: Qui rêvent de partir mais pas de se ruiner
+          text: Un deal fou le vendredi? Tu pars le lendemain.
+        - name: Aventuriers
+          role: Qui aiment l'imprévu
+          text: Il y a toujours un vol pas cher quelque part. Hopla te le trouve.
 
-  # ========== FAQ ==========
   - block: accordion
     id: faq
     content:
@@ -151,16 +143,15 @@ sections:
         - title: Comment marche une alerte?
           text: Tu définis destination + budget. On scanne 24/7. Si prix baisse, tu reçois une notification.
 
-  # ========== FINAL CTA ==========
   - block: cta
     id: download
     content:
       title: C'est ton tour de partir
       text: Ouvre l'app, découvre un deal fou, pars demain.
       button:
-        text: 📱 Télécharger sur l'App Store
-        url: 'https://apps.apple.com/fr/app/hopla-vols-pas-chers-alsace/id6753660322'
+        text: "📱 Télécharger sur l'App Store"
+        url: "https://apps.apple.com/fr/app/hopla-vols-pas-chers-alsace/id6753660322"
     design:
-      css_class: "bg-red-600 text-white"
+      css_class: bg-red-600 text-white
 
 ---
